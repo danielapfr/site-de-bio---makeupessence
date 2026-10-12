@@ -1,7 +1,12 @@
 @charset "UTF-8";
 
-body{
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+
+html{
     background: linear-gradient(to bottom, #2C1810, #5E3729);
+    
 }
 .perfil{
     display: block;
@@ -11,11 +16,15 @@ body{
 }
 
 h2{
+    font-family: "Lexend", sans-serif;
+    font-weight: lighter;
     text-align: center;
     color: white;
 }
 
 p{
+    font-family: "Lexend", sans-serif;
+    font-weight: lighter;
     color: white;
 }
 
@@ -54,6 +63,8 @@ img{
 }
 
 span{
+    font-family: "Lexend", sans-serif;
+    font-weight: normal;
     position: absolute;
     left: 0;
     right: 0;
@@ -76,16 +87,28 @@ span{
 
 }
 
-.seta {
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%);
-    z-index: 2;
-    width: 30px;
-    height: 30px;
-    border: none;
-    border-radius: 50%;
-    background: #ffffffdd;
-    color: #573b42;
-    cursor: pointer;
+.botao-container, .grupo{
+    display: flex;
+    width: 80%;
+    max-width: 400px;
+    margin: 20px auto;
+    overflow: hidden;
+    background: transparent;
 }
+
+ .grupo{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap:15px;
+    position: relative;
+    padding: 16px 15px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 300;
+    background-color: transparent;
+    border: 2px solid rgba(75, 35, 11, 0.806);
+    transition: background 0.3s ease;
+}
+
