@@ -12,11 +12,13 @@
         <img src="imagens/perfil.png" alt="" class="perfil">
         <h2>Makeup Essence</h2>
         <p>Escolha seus cursos</p>
+
+        <button class="seta-esq" onclick="avancarFoto(-1)">&#8592</button>
+
         
         <div class="carrossel">
 
             <div class="lista-cursos">
-
                 
                     <a href="#" class="curso">
                     <img src="imagens/fio a fio.png" alt="Extensão de cilios fio a fio" class="imgdestaque">
@@ -111,6 +113,9 @@
 
             </div>
 
+            <button class="seta-dir"  onclick="avancarFoto(1)">&#8594</button>
+
+
             <div class="botoes-container">
                 <a href="#" class="botao-link" target="_blank">
                     <i class="fa-solid fa-cart-shopping"></i>
@@ -131,5 +136,14 @@
         </div>
 
     </section>
+    <script>
+        function avancarFoto (direcao){
+            const container = document.querySelector('.lista-cursos');
+            const deslocamento = 300;
+            container.scrollBy({
+                left: direcao * deslocamento, behavior: 'smooth'
+            })
+        }
+    </script>
 </body>
 </html>

@@ -4,7 +4,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
 
 
-html{
+body, html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     background: linear-gradient(to bottom, #2C1810, #5E3729);
     
 }
@@ -24,6 +27,9 @@ h2{
 }
 
 p{
+    padding-left: 15px;
+    padding-right: 15px;
+    word-break: break-word;
     font-family: "Lexend", sans-serif;
     font-weight: 400;
     color: white;
@@ -66,7 +72,6 @@ img{
     object-fit: cover;
 }
 
-
 .texto-curso{
     font-family: "Lexend", sans-serif;
     font-weight: normal;
@@ -92,26 +97,30 @@ img{
 
 }
 
-.bolinhas{
-    display: flex;
-    gap: 8px;
-}
-
-.dot{
-    width: 8px;
-    height: 8px;
-    background-color: #e42e2e;
+.seta-esq, .seta-dir{
+    position:fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.307);
+    color: white;
+    border: none;
     border-radius: 50%;
-    display: inline-block;
-    transition: all 0.3s ease;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    cursor: pointer;
+    z-index: 999;
+}
+.seta-esq{
+    font-size: 15px;
+    left: 10px;
 }
 
-.dotativo{
-    background-color: ffffff;
-    width: 10px;
-    height: 10px;
-}
 
+.seta-dir{
+    font-size: 15px;
+    right: 10px;
+}
 .botoes-container{
     display: flex;
     justify-content: center;
