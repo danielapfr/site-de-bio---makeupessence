@@ -11,8 +11,9 @@ body, html{
     box-sizing: border-box;
     scrollbar-width: none;
     background: linear-gradient(to bottom, #2C1810, #5E3729);
-    
+    -webkit-text-size-adjust: 100%;
 }
+
 .perfil{
     display: block;
     margin-left: auto;
