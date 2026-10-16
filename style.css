@@ -21,23 +21,25 @@ body, html{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width:80px;
-    padding: 20px;
+    width:90px;
 }
 
 h2{
     font-family: "Lexend", sans-serif;
     font-weight: lighter;
+    font-size: 20px;
     text-align: center;
     color: white;
+    padding: 5px;
 }
 
 p{
+    padding: 10px;
     padding-left: 15px;
     padding-right: 15px;
     word-break: break-word;
     font-family: "Lexend", sans-serif;
-    font-weight: 400;
+    font-weight: lighter;
     color: white;
 }
 
@@ -150,13 +152,14 @@ img{
     right: 8px;
     font-size: 15px;
 }
+
 .botoes-container{
     display: flex;
     justify-content: center;
     gap: 15px;
     width: 80%;
     flex-direction: column;
-    padding: 50px;
+    padding: 30px;
     max-width: 400px;
     margin: 20px auto;
     overflow: hidden;
@@ -181,7 +184,7 @@ img{
     font-size: 16px;
     font-weight: 300;
     background-color: transparent;
-    border: 2px solid rgba(75, 36, 11, 0.979);
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.196);
     transition: background 0.3s ease;
     border-radius: 15px;
 
