@@ -8,6 +8,7 @@ body, html{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scrollbar-width: none;
     background: linear-gradient(to bottom, #2C1810, #5E3729);
     
 }
@@ -111,9 +112,18 @@ img{
     cursor: pointer;
     z-index: 999;
 }
+
+.escondida{
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+
+}
+
 .seta-esq{
     font-size: 15px;
     left: 10px;
+    transition: opacity 0.3 ease;
 }
 
 
@@ -136,7 +146,7 @@ img{
 }
 
 .botao-link:hover{
-    background-color: rgba(75, 36, 11, 0.313);
+    background-color: rgba(255, 254, 253, 0.021);
 }
 
  .botao-link{

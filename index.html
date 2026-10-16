@@ -13,7 +13,7 @@
         <h2>Makeup Essence</h2>
         <p>Escolha seus cursos</p>
 
-        <button class="seta-esq" onclick="avancarFoto(-1)">&#8592</button>
+        <button class="escondida seta-esq" onclick="avancarFoto(-1)">&#8592</button>
 
         
         <div class="carrossel">
@@ -113,7 +113,7 @@
 
             </div>
 
-            <button class="seta-dir"  onclick="avancarFoto(1)">&#8594</button>
+            <button class="escondida seta-dir"  onclick="avancarFoto(1)">&#8594</button>
 
 
             <div class="botoes-container">
@@ -137,13 +137,41 @@
 
     </section>
     <script>
-        function avancarFoto (direcao){
-            const container = document.querySelector('.lista-cursos');
-            const deslocamento = 300;
-            container.scrollBy({
-                left: direcao * deslocamento, behavior: 'smooth'
-            })
-        }
-    </script>
+  const container = document.querySelector('.lista-cursos');
+  const btnEsquerda = document.querySelector('.seta-esq');
+  const btnDireita = document.querySelector('.seta-dir'); // Certifique-se de que a seta direita tem a classe "seta-dir"
+
+  function avancarFoto(direcao) {
+    const deslocamento = 300; 
+    container.scrollBy({
+      left: direcao * deslocamento,
+      behavior: 'smooth'
+    });
+  }
+
+  // Função para controlar quais setas devem aparecer ou desaparecer
+  function atualizarSetas() {
+    // 1. Seta Esquerda: se já andou para a frente, mostra; senão, esconde
+    if (container.scrollLeft > 20) {
+      btnEsquerda.classList.remove('escondida');
+    } else {
+      btnEsquerda.classList.add('escondida');
+    }
+
+    // 2. Seta Direita: se chegou ao fim da lista, esconde; senão, mostra
+    // (scrollWidth é o tamanho total, clientWidth é o que está visível)
+    if (container.scrollLeft + container.clientWidth >= container.scrollWidth - 10) {
+      btnDireita.classList.add('escondida');
+    } else {
+      btnDireita.classList.remove('escondida');
+    }
+  }
+
+  // Ouve quando o utilizador faz scroll
+  container.addEventListener('scroll', atualizarSetas);
+
+  // Executa assim que a página abre para definir o estado inicial
+  window.addEventListener('load', atualizarSetas);
+</script>
 </body>
 </html>
