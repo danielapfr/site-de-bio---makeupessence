@@ -46,6 +46,9 @@ main{
 
 .carrossel{
     position: relative;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 .lista-cursos{
@@ -118,6 +121,9 @@ img{
     font-size: 22px;
     cursor: pointer;
     z-index: 999;
+
+    outline: none;
+    touch-action: manipulation;
 }
 
 .escondida{
