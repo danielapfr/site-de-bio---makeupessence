@@ -12,6 +12,8 @@ body, html{
     scrollbar-width: none;
     background: linear-gradient(to bottom, #2C1810, #5E3729);
     -webkit-text-size-adjust: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
 }
 
 .perfil{
