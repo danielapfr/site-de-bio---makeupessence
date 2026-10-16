@@ -14,6 +14,7 @@ body, html{
     -webkit-text-size-adjust: 100%;
     min-height: 100%;
     overflow-x: hidden;
+    
 }
 
 .perfil{
@@ -45,6 +46,8 @@ main{
     max-width: 1000px;
     padding: 20px;
     margin: auto;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
 }
 
 .carrossel{
@@ -112,7 +115,7 @@ img{
 }
 
 .seta-esq, .seta-dir{
-    position:fixed;
+    position:absolute;
     top: 50%;
     transform: translateY(-50%);
     background-color: rgba(0, 0, 0, 0.307);
@@ -123,7 +126,7 @@ img{
     height: 40px;
     font-size: 22px;
     cursor: pointer;
-    z-index: 999;
+    z-index: 50;
 
     outline: none;
     touch-action: manipulation;
@@ -137,15 +140,15 @@ img{
 }
 
 .seta-esq{
+    left: 8px;
     font-size: 15px;
-    left: 10px;
     transition: opacity 0.3 ease;
 }
 
 
 .seta-dir{
+    right: 8px;
     font-size: 15px;
-    right: 10px;
 }
 .botoes-container{
     display: flex;
