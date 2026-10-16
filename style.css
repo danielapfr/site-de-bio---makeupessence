@@ -112,7 +112,7 @@ img{
     padding: 35px 8px 12px;
     color: white;
     text-align: center;
-    font-size: 13px;
+    font-size: 10px;
     line-height: 1.8;
 
     background: linear-gradient(to bottom,
@@ -140,7 +140,7 @@ img{
     border-radius: 50%;
     width: 40px;
     height: 40px;
-    font-size: 22px;
+    font-size: 20px;
     cursor: pointer;
     z-index: 50;
 
