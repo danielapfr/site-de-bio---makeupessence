@@ -112,8 +112,8 @@ img{
     padding: 35px 8px 12px;
     color: white;
     text-align: center;
-    font-size: 10px;
-    line-height: 1.8;
+    font-size: 15px;
+    line-height: 1.2;
 
     background: linear-gradient(to bottom,
      transparent,
@@ -125,7 +125,7 @@ img{
     font-size: 13px;
     font-weight: 100;
     text-decoration: underline;
-    line-height: 0.1;
+    line-height: 1.5;
 
 }
 
