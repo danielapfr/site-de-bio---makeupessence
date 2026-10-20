@@ -60,7 +60,7 @@ main{
 .carrossel{
     position: relative;
     width: 100%;
-    max-width: 100%;
+    max-width: 600px;
     margin: 0 auto;
 }
 
@@ -132,20 +132,21 @@ img{
 
 .seta-esq, .seta-dir{
     position:absolute;
+    right: 15px;
     top: 50%;
-    transform: translateY(-50%);
     background-color: rgba(0, 0, 0, 0.307);
     color: white;
     border: none;
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     font-size: 20px;
     cursor: pointer;
-    z-index: 50;
+    z-index: 10;
 
     outline: none;
     touch-action: manipulation;
+    transform: translateY(-50%);
 }
 
 .escondida{
@@ -156,14 +157,14 @@ img{
 }
 
 .seta-esq{
-    left: 8px;
+    left: 1px;
     font-size: 15px;
     transition: opacity 0.3 ease;
 }
 
 
 .seta-dir{
-    right: 8px;
+    right: 1px;
     font-size: 15px;
 }
 
