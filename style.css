@@ -87,6 +87,12 @@ main{
    scroll-snap-align: start;
 }
 
+
+.imgeditaveis{
+    width: 300px;
+    height: 230px;
+}
+
 img{
     max-width: 100%;
     display: block;
