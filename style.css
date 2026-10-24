@@ -87,11 +87,15 @@ main{
    scroll-snap-align: start;
 }
 
+.editaveis{
+    width: 450px;
+}
 
 .imgeditaveis{
-    width: 300px;
+    width: 450px;
     height: 230px;
 }
+
 
 img{
     max-width: 100%;
