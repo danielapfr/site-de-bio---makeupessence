@@ -88,14 +88,19 @@ main{
 }
 
 .editaveis{
-    width: 370px;
+    width: 330px;
+    height: 162px;
 }
 
 .imgeditaveis{
-    width: 370px;
-    height: 200px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
+.container{
+    gap: 10px;
+}
 
 img{
     max-width: 100%;
